@@ -2,8 +2,9 @@ import 'antd/dist/antd.css';
 import './App.css';
 import { Layout } from 'antd';
 import AppHeader from './components/common/header';
-
-const { Header } = Layout;
+import AppHome from './views/home';
+import AppFooter from './components/common/footer';
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
@@ -11,6 +12,12 @@ function App() {
       <Header>
         <AppHeader />
       </Header>
+      <Content>
+        <AppHome />
+      </Content>
+      <Footer>
+        <AppFooter />
+      </Footer>
     </Layout>
   );
 }
